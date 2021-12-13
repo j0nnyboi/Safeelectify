@@ -4,7 +4,7 @@ import { PublicKey, Connection } from '@safecoin/web3.js';
 export async function get_asks(marketAddress: String) {
 	let connection = new Connection('https://api.devnet.safecoin.org')
 	let marketpubkey = new PublicKey(marketAddress);
-	let programAddress = new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin');
+	let programAddress = new PublicKey('8s5qFsS2fdPyBu4rkcunM6kboajdaLaAmE3xJZ1qkwG1');
 	let market = await Market.load(connection, marketpubkey, {}, programAddress);
 
 	let encoded = await market.loadAsks(connection);

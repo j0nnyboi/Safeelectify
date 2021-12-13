@@ -117,7 +117,7 @@ async function settle_funds({
 export async function settleFunds(wallet: WalletAdapter) {
 	let connection = new Connection("https://api.devnet.safecoin.org")
 	let marketAddress = new PublicKey("6fc7v3PmjZG9Lk2XTot6BywGyYLkBQuzuFKd4FpCsPxk")
-	let programId = new PublicKey("9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin")
+	let programId = new PublicKey("8s5qFsS2fdPyBu4rkcunM6kboajdaLaAmE3xJZ1qkwG1")
 	let market = await Market.load(connection, marketAddress,{},programId);
 	//let baseCurrencyAccount = await getTokenAddress(wallet.publicKey.toBase58(),market.baseMintAddress.toBase58())
 	//let quoteCurrencyAccount = await getTokenAddress(wallet.publicKey.toBase58(),market.quoteMintAddress.toBase58())

@@ -20,7 +20,7 @@ export const providers: Provider[] = [
     },
     {
       name: "Safecoin",
-      url: "https://www.ledger.com",
+      url: "https://www.safecoin.org",
       icon: '/wallets/ledger.png',
       adapter: Wallet
     }
